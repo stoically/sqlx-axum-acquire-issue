@@ -1,0 +1,11 @@
+[package]
+name = "sqlx-acquire"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.4.5"
+sqlx = { version = "0.5.10", features = ["postgres", "runtime-tokio-native-tls"] }
+tokio = { version = "1.16.1", features = ["macros"] }
